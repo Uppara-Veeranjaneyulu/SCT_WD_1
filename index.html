@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTrack - Your Ultimate Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+</head>
+<body>
+    <div class="scroll-indicator"></div>
+    
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">💪 FitTrack</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#features" class="nav-link">Features</a></li>
+                <li><a href="#stats" class="nav-link">Stats</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <div class="theme-toggle" id="themeToggle">
+                        <span class="theme-icon">☀️</span>
+                        <span class="theme-icon">🌙</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Transform Your Fitness Journey</h1>
+                <p>Track workouts, monitor progress, and achieve your health goals with our comprehensive fitness tracking platform. Start your transformation today.</p>
+                <div class="cta-buttons">
+                    <a href="#features" class="btn-primary">Get Started Free</a>
+                    <a href="#stats" class="btn-secondary">Learn More</a>
+                </div>
+            </div>
+            <div class="bmi-calculator">
+                <h3>🧮 BMI Calculator</h3>
+                <div class="input-group">
+                    <label for="weight">Weight (kg)</label>
+                    <input type="number" id="weight" placeholder="Enter your weight" min="1" max="500">
+                </div>
+                <div class="input-group">
+                    <label for="height">Height (cm)</label>
+                    <input type="number" id="height" placeholder="Enter your height" min="50" max="300">
+                </div>
+                <button class="calculate-btn" onclick="calculateBMI()">Calculate BMI</button>
+                <div class="bmi-result" id="bmiResult">
+                    <div class="bmi-value" id="bmiValue"></div>
+                    <div class="bmi-category" id="bmiCategory"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="features">
+        <div class="container">
+            <h2 class="section-title">Powerful Features</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🏃‍♂️</div>
+                    <h3>Workout Tracking</h3>
+                    <p>Log and monitor your workouts with detailed metrics, progress photos, and performance analytics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3>Progress Analytics</h3>
+                    <p>Visualize your fitness journey with comprehensive charts, graphs, and progress reports.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3>Goal Setting</h3>
+                    <p>Set personalized fitness goals and track your progress with smart notifications and reminders.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🍎</div>
+                    <h3>Nutrition Tracking</h3>
+                    <p>Monitor your daily nutrition intake with our comprehensive food database and macro tracking.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>Community Support</h3>
+                    <p>Connect with like-minded fitness enthusiasts and share your journey with our supportive community.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">⌚</div>
+                    <h3>Wearable Integration</h3>
+                    <p>Sync with popular fitness trackers and smartwatches for seamless data collection.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section stats-section" id="stats">
+        <div class="container">
+            <h2 class="section-title">Join Thousands of Successful Users</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number">50K+</span>
+                    <span class="stat-label">Active Users</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">2M+</span>
+                    <span class="stat-label">Workouts Logged</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">95%</span>
+                    <span class="stat-label">User Satisfaction</span>
+                </div>
+                <div class="stat-card">
+                    <span class="stat-number">1M+</span>
+                    <span class="stat-label">Goals Achieved</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+        <div class="container">
+            <h2 class="section-title">Ready to Start Your Journey?</h2>
+            <div style="text-align: center; max-width: 600px; margin: 0 auto;">
+                <p style="font-size: 1.2rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                    Join thousands of users who have transformed their lives with FitTrack. Start your free trial today!
+                </p>
+                <div class="cta-buttons" style="justify-content: center;">
+                    <a href="#" class="btn-primary">Start Free Trial</a>
+                    <a href="#" class="btn-secondary" style="color: var(--text-primary); border-color: var(--border);">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 FitTrack. All rights reserved. Your ultimate fitness companion.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
